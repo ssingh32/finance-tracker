@@ -14,11 +14,13 @@
             </div>
         </div>
 				<% if @stock %>
-					<div class="card card-header">
+					<div class="card card-header results-block col-sm-9">
 							<strong>Symbol: </strong> <%= @stock.ticker %>
 							<strong>Name: </strong> <%= @stock.name %>
 							<strong>Price: </strong> <%= @stock.last_price %>
 					</div>
-				<% end %>
+				# <% elsif @stock == '' %>	
+				# 		<strong>Empty: </strong>
+				# <% end %>
     <% end %>
 </div>
